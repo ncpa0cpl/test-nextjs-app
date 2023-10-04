@@ -3,20 +3,25 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev-css": "nodemon --watch ./src --delay 250ms ./scripts/build-css.mjs",
+    "build-css": "node ./scripts/build-css.mjs",
+    "dev": "(trap 'kill 0' SIGINT; npm run dev-css & next dev)",
+    "build": "npm run build-css && next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "next": "13.5.4",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "13.5.4"
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
-    "@types/react-dom": "^18"
+    "@types/react-dom": "^18",
+    "node-os-walk": "^1.0.2",
+    "nodemon": "^3.0.1",
+    "sass": "^1.68.0",
+    "typescript": "^5"
   }
 }

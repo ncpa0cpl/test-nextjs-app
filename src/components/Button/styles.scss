@@ -1,0 +1,18 @@
+.btn {
+    // disable default browser styles
+    appearance: none;
+    border: none;
+    outline: none;
+    // custom styles
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    // custom colors
+    background-color: rgba(215, 199, 24, 0.8);
+
+    &:hover {
+        background-color: rgba(180, 166, 21, 0.8);
+    }
+}

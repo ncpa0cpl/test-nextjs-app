@@ -1,0 +1,33 @@
+.btn {
+  appearance: none;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: rgba(215, 199, 24, 0.8);
+}
+.btn:hover {
+  background-color: rgba(180, 166, 21, 0.8);
+}
+
+.inpt {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #3d3d3d;
+}
+.inpt.error {
+  border-color: red;
+}
+
+.typography {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #333;
+}

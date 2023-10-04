@@ -1,0 +1,4 @@
+{
+  "ignore": ["./src/app/global.css"],
+  "ext": "css,scss,sass"
+}
